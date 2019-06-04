@@ -1,105 +1,184 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-us">
     <head>
-        <meta charset="utf-8">
+        <title>FCC Technical Documentation page</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>
-            FCC Landing page
-        </title>
     </head>
     <body>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <header id="header">
-                <img src="https://ichef.bbci.co.uk/news/320/cpsprodpb/DFB6/production/_103407275_gettyimages-1027412410.jpg" id="header-img"> 
+        <div >
+                <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>            <p id="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/64px-Visual_Studio_Code_1.18_icon.svg.png" alt="Visual Studio Code logo"> VS CODE</P>
+        </div >
+            <nav id="navbar">
+                <header>VS Code Documentation</header>
+                <ul>
+                <a href="#getting_started" class="nav-link"><li>Getting started</li></a>
+                <a href="#how_to_use" class="nav-link"><li>How to use</li></a>
+                <a href="#extensions" class="nav-link"><li>Extensions</li></a>
+                <a href="#first_steps" class="nav-link"><li>First Steps</li></a>
+                <a href="#keyboard_shortcuts" class="nav-link"><li>Keyboard Shortcuts</li></a>
+                <a href="#downloads" class="nav-link"><li>Downloads</li></a>
+                <a href="#privacy" class="nav-link"><li>Privacy</li></a>
+            </ul>
+            </nav>
+        <main id="main-doc">
+            <div >
 
-                <div>
-                  <nav id="nav-bar">
-                      <ul>
-                        <h1>Huawei Phones</h1>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#How-It-Works" class="nav-link">How It Works</a></li>
-                    <li><a href="#Pricing" class="nav-link">Pricing</a></li>
-                </ul>
-                </nav>
-                </div>
-            
-        </header>
-        <main>
-            
-                <div id="frm-div">
-                    <p id="frm-txt">Stylish,quality and beautiful Phones</p>
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <p><input type="email" name="email" placeholder="Enter your email adress" autofocus required id="email"></p>
-                    <p><input type="submit" value="Get Started" id="submit"></p>
-                    </form>
-                </div>
-            <section id="features">
-                <div>
-                    <i class="fas fa-mobile-alt"></i>
-                    <h2> Phones</h2>
-                    <p class="exp">Our Phones use the latest technology which is sourced locally. This will increase the longevity of your purchase.</p>
-                </div>
-                <div>
-                    <i class="fas fa-truck"></i>
-                    <h2>Fast Shipping</h2>
-                    <p class="exp">We make sure you recieve your Phone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-                </div>  
-                <div>
-                    <i class="fas fa-battery-full"></i>
-                    <h2>Quality Assurance</h2>
-                    <p class="exp">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your phone.</p>
-                </div>
-            </section>
-            <div id="How-It-Works">
-                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NfxwablloIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <section class="main-section" id="getting_started">
+                    <header>Getting Started</header>
+                    <article>
+                            <p> Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</p>
+                            <p> It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity). Begin your journey with VS Code with these introductory videos.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fnPhJHN0jTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                    </article>
+                </section>
+<section class="main-section" id="how_to_use">
+    <header>How to Use</header>
+    <article>
+        <p>VS Code comes equipped with support for various languages such as html,css,javascript,python and so on. Here is an example of how to use or write a code:</p>
+        <ul>
+            <li>
+                <h3>HTML5</h3>
+                <p>Here is the syntax for html5.<br>
+                    <code> 
+                        <pre>
+                    &#60;!DOCTYPE html&gt;
+                    &#60;html&gt;
+                    
+                    &lt;head&gt;
+                    &lt;title&gt;HTML pre Tag&lt;/title&gt;
+                            &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;p&gt;
+                                    This text is
+                                in a fixed-pitch
+                                    font, and it preserves
+                                both    spaces and line breaks
+                                &lt;/p&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+                </code>  
+                </p>
+            </li>
+            <li>
+                <h3>CSS</h3>
+                <code>
+                    <pre>
+                    @media only screen and (max-width: 815px)
+                    #navbar {
+                        background-color: white;
+                        position: absolute;
+                        top: 0;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        max-height: 275px;
+                        border: none;
+                        z-index: 1;
+                        border-bottom: 2px solid;
+                    }
+                    </pre>
+                </code>
+            </li>
+            <li>
+                <h3>Javascript</h3>
+                <code>
+                    <pre>
+                    if (true) {
+                        var e = 1;
+                        }
+                        console.log(e); // 1
+                    </pre>
+                    </code>
+            </li>
+            <li>
+                <h3>Python</h3>
+                <code>
+                    <pre>
+                        x = 1
+                        if x == 1:
+                            # indented four spaces
+                            print("x is 1.")
+                    </pre>
+                </code>
+                <li>
+                <h3>C++</h3>
+                    <code>
+                    <pre>
+                    #include <iostream>
+                        using namespace std;
+                            
+                        int main() 
+                        {
+                            cout << "Hello, World!";
+                            return 0;
+                        }
+                    </pre>
+                    </code>
+                </li>
+            </li>
+        </ul>
+    </article>
+</section>
+                <section class="main-section" id="extensions">
+                        <header>Extensions</header>
+                    <article>
+                            <P>Enable additional languages, themes, debuggers, commands, and more. VS Code's growing community shares their secret sauce to improve your workflow.
+                            Python comes equipped with the following extensions:
+                            <ol>
+                                <li>Python</li>
+                                <li>C/C++</li>
+                                <li>ESlint</li>
+                                <li>Debugger for Chrome</li>
+                                <li>vscode-icons</li>
+                                <li>Language support for Java ™ for Visual Studio Code</li>
+                                <li>Gitlens</li>
+                                <li>Vetur</li>
+                            </ol>
+                            <p>You can see more extensions<a href="https://marketplace.visualstudio.com/vscode" target="_blank"> here</a></p>
+                        </P>
+                    </article>
+                </section>
+                <section class="main-section" id="first_steps">
+                    <header>First Steps</header>
+                        <article>
+                            <p>To get the most out of Visual Studio Code, start by reviewing a few introductory topics:</p>
+                            <p><a href="https://code.visualstudio.com/docs/getstarted/introvideos" target="_blank">Intro Videos</a> - Begin your journey with VS Code through these introductory videos.</p>
+                            <p><a href="https://code.visualstudio.com/docs/setup/setup-overview" target="_blank">Setup</a> - Install VS Code for your platform and configure the tool set for your development needs.</p>
+                            <p><a href="https://code.visualstudio.com/docs/getstarted/userinterface" target="_blank">User Interface</a> - Introduction to the basic UI, commands, and features of the VS Code editor.</p>
+                            <p><a href="https://code.visualstudio.com/docs/getstarted/settings" target="_blank">Settings</a> - Customize VS Code for how you like to work.</p>
+                            <p><a href="https://code.visualstudio.com/docs/languages/overview" target="_blank">Languages</a> - Learn about VS Code's support for your favorite programming languages.</p>
+                            <p><a href="https://code.visualstudio.com/docs/nodejs/nodejs-tutorial" target="_blank">Node.js</a> - This tutorial gets you quickly running and debugging a Node.js web app.</p>
+                            <p><a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" target="_blank">Tips and Tricks</a> - Jump right in with Tips and Tricks to become a VS Code power user.</p>
+                            <p><a href="https://code.visualstudio.com/docs/azure/extensions" target="_blank">Azure</a> - VS Code is great for deploying your web applications to the cloud.</p>
+                            <p><a href="https://code.visualstudio.com/api" target="_blank">Extension API</a> - Learn how to write a VS Code extension.</p>
+                            <p><a href="https://code.visualstudio.com/docs/editor/whyvscode" target="_blank">Why Vs Code</a> - Read about the design philosophy and architecture of VS Code.</p>
+                        </article>
+                    </section>
+                <section class="main-section" id="keyboard_shortcuts">
+                    <header>Keyboard Shortcuts</header>
+                    <article>
+                        <p>Increase your productivity with VS Code's keyboard shortcuts.</p>
+                        <p><a href="https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference" target="_blank">Keyboard Shortcut Reference Sheet</a></p>
+                        <p><a href="https://code.visualstudio.com/docs/getstarted/keybindings#_keymap-extensions" target="_blank">Keymap Extensions</a> - Change VS Code's keyboard shortcuts to match another editor.</p>
+                        <p><a href="https://code.visualstudio.com/docs/getstarted/keybindings#_customizing-shortcuts" target="_blank">Customize Keyboard Shortcuts</a> - Modify the default keyboard shortcuts.</p>
+                    </article>
+                </section>
+                <section class="main-section" id="downloads">
+                    <header>Downloads</header>
+                    <article>
+                        <p><a href="https://code.visualstudio.com/download" target="_blank">Downloads</a> - Quickly find the appropriate install for your platform (Windows, macOS and Linux).</p>
+                    </article>
+                </section>
+                <section class="main-section" id="privacy">
+                    <header>Privacy</header>
+                    <p>By default, VS Code auto-updates to new versions, and collects usage data and crash report information. You may opt out of these defaults by disabling them as instructed below:</p>
+                    <p><a href="https://code.visualstudio.com/docs/supporting/faq#_how-do-i-opt-out-of-vs-code-autoupdates" target="_blank">How do I disable auto update?</a></p>
+                    <p><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-crash-reporting" target="blank">How do I disable crash reporting?</a></p>
+                    <p><a href="https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting" target="_blank">How do I disable usage reporting?</a></p>
+                </section>
             </div>
-            <section id="Pricing">
-            <div id="trial">
-                <div id="p30pro">
-                    <p>Huawei P30 Pro</p>
-                        <img class="image" src="https://i.gadgets360cdn.com/products/large/1553612597_635_huawei_p30_pro.jpg?downsize=770:*&output-quality=70&output-format=webp">
-                            <ul>
-                                <p>$3000</p>
-                                <li>4000mAh Battery</li>
-                                <li>4/8/12 RAM</li>
-                                <li>Stylish colors</li>
-                            </ul>
-                            <input type="button" name="select" value="Select" class="sel">
-                </div>
-                <div id="p30">
-                    <p>Huawei P30</p>
-                        <img class="image" src="http://shopnagar.com/wp-content/uploads/2019/02/Huawei-P30-33.jpg?189db0&189db0">
-                            <ul>
-                                <p>$1500</p>
-                                <li>3750mAh Battery</li>
-                                <li>4/8 RAM</li>
-                                <li>Stylish colors</li>
-                            </ul>
-                            <input type="button" name="select" value="Select" class="sel">
-                </div>
-                <div id="p30lite">
-                    <p>Huawei P30 Lite</p>
-                        <img class="image" src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-lite/img/Huawei-Nova-4e_bg.jpg">
-                            <ul>
-                                <p>$1000</p>
-                                <li>3300mAh Battery</li>
-                                <li>4/6 RAM</li>
-                                <li>Stylish colors</li>
-                            </ul>
-                            <input type="button" name="select" value="Select" class="sel">
-            </div>
-            </section>
         </main>
-        <footer>
-            <ol>
-                <li> <a href="#Terms-conditions">Terms & Conditions</a></li>
-                <li> <a href="Privacy">Privacy</a></li>
-                <li> <a href="#contact-support">Contact & Support</a></li>
-                <li> <a href="#about">About</a></li>
-            </ol>
-            <span>&copy; Copyright 2019, Cyrus Mureithi| All Rights Reserved</span>
-        </footer>
     </body>
 </html>
